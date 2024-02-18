@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background-image: url('ev.gif'); 
+            background-size: cover;
+            background-position: center;
+            color: #fff; /* Light text color */
+            text-align: center;
+            padding: 150px ; /* Adjust padding as needed */
+        }
+
+        header .container {
+            max-width: 2000px;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+
+        header img {
+            border-radius: 50%; /* Make the image round */
+            margin-top: 20px;
+        }
+
+        #signup-container {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #signup-container h2 {
+            margin-bottom: 20px;
+        }
+
+        #signup-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #signup-form input {
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #666;
+            border-radius: 4px;
+        }
+
+        #signup-form button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #signup-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="serac mobility solutions.png" alt="Balkishan Padihar" width="150" height="100"><h1>Serac Mobility Solutions</h1>
+        <p>Simplify your journeys with Serac</p>
+    </header>
+
+    <div id="signup-container">
+        <h2>New User Sign Up</h2>
+        <form id="signup-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="text" placeholder="Address" required>
+            <input type="text" placeholder="Mobile Number" required>
+            <input type="text" placeholder="Vehicle Number" required>
+            <input type="date" placeholder="Date of Birth" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    <a href="index.html" class="btn">Go to Home</a>
+    <footer>
+        <div class="container">
+            <p>Contact:shikharpgedam@gmail.com 
+                <p>&copy; 2024 Serac Mobility Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

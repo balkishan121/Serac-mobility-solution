@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #222; /* Light background color */
+        }
+
+        header {
+            background-image: url('ev.gif'); 
+            background-size: cover;
+            background-position: center;
+            color: #fff; /* Light text color */
+            text-align: center;
+            padding: 200px ; /* Adjust padding as needed */
+        }
+
+        header .container {
+            max-width: 2000px;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+
+        header img {
+            border-radius: 50%; /* Make the image round */
+            margin-top: 20px;
+        }
+        #education, #personal-info, #achievements {
+            text-align: right;
+            margin: 20px auto;
+        }
+
+        #education a, #personal-info a, #achievements {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #01463f;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 3s;
+        }
+
+        #education a:hover, #personal-info a:hover { 
+            background-color: #2980b9;
+        }
+        #login-container {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        #login-container h2 {
+            margin-bottom: 20px;
+        }
+
+        #login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #login-form input {
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #666;
+            border-radius: 4px;
+        }
+
+        #login-form button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #login-form button:hover {
+            background-color: #45a049;
+        }
+        .video-container {
+            text-align: center;
+        }
+
+        video {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="serac mobility solutions.png" alt="Balkishan Padihar" width="150" height="100"><h1>Serac Mobility Solutions</h1>
+        <p>Simplify your journeys with Serac</p>
+        <section id="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </section>
+        <section id="menu-options">
+            <h2>Name of Consumer </h2>
+            <p><i class="fas fa-user"></i><a href="account.html"> My Account</a></p>
+            <p><i class="fas fa-history"></i><a href="history.html">  Charging History</a></p>
+            <p><i class="fas fa-car"></i><a href="vehicles.html">   My Vehicles</a></p>
+            <p><i class="fas fa-chart-line"></i><a href="my usages.html">   My Usages</a></p>
+            <p><i class="fas fa-credit-card"></i><a href="payment method.html">  Payment Method</a></p>
+            <p><i class="fas fa-book"></i><a href="my bookings.html"> My Booking</a></p>
+            <p><i class="fas fa-question-circle"></i><a href="help.html">  Help & Support</a></p><br>
+            <p><i class="fas fa-arrow-left"></i><a href="logout.html"> Logout</a></p>
+        </section>
+    </header>
+    <br>
+    <p>
+        <span style="color: white; font-size: 1.2em;">
+          Serac Mobility Solutions revolutionizes EV charging with our "Mobile Charging Station" service. We ditch stationary stations and bring the charge directly to you, wherever you need it. No more range anxiety, just fast, reliable charging with cutting-edge technology and expert support. Choose Serac and experience the future of convenient, flexible EV charging.
+        </span>
+      </p>
+      
+    <div class="video-container">
+    <video width="1920" height="1080" controls>
+        <source src="Comp.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    </div>
+    <div id="login-container">
+        <h2>Hey Login Here :)</h2>
+        <form id="login-form">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu-options");
+            menu.style.display = (menu.style.display === "block") ? "none" : "block";
+        }
+    </script>
+   <a href="index.html" class="btn">Go to Home</a>
+   <footer>
+    <div class="container">
+        <p>Contact:shikharpgedam@gmail.com 
+            <p>&copy; 2024 Serac Mobility Solutions. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+
+</html>
